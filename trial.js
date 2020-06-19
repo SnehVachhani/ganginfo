@@ -47,5 +47,5 @@ function myfunction() {
     } else {
       li[i].style.display = 'none';
     }
-  }alert("fuck");
+  }
 }
