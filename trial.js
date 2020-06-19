@@ -1,6 +1,8 @@
 function mybabyboss() {
   const  x = document.getElementById('mylinks');
   const nv = document.getElementById("nav");
+  const l1 =document.getElementById("l1");
+  const l2 =document.getElementById("l2");
   if (x.style.opacity === '1') {
   	x.style.display="none";
     x.style.opacity = '0';
@@ -8,6 +10,8 @@ function mybabyboss() {
     nv.style.borderRadius='';
     nv.style.padding='';
     nv.style.width='237px';
+    l1.style.cursor="default";
+    l2.style.cursor="default";
   } else {
     x.style.opacity = '1';
     x.style.display="inline-block";
@@ -15,6 +19,8 @@ function mybabyboss() {
     nv.style.borderRadius='10px';
     nv.style.padding='1px';
     nv.style.width="100%";
+    l1.style.cursor="pointer";
+    l2.style.cursor="pointer";
   }
 }
 function home(){
