@@ -22,6 +22,9 @@ function home(){
 		document.getElementById("Meh").style.display="block";
 		document.getElementById("sbtn").style.display="none";
 	}		
+	for(let i=0;i<=13;i++){
+		document.getElementById('myUL').getElementsByTagName('li')[i].style.display = 'none';
+	}
 }
 
 function Search(){{
@@ -34,18 +37,17 @@ function Search(){{
 	}
 }
 function myfunction() {
-  let input; let filter; let ul; let li; let a; let i; let txtValue;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
+  let filter; let ul; let li; let a; let i; let txtValue;
+  filter = document.getElementById('myInput').value.toUpperCase();
   ul = document.getElementById('myUL');
   li = ul.getElementsByTagName('li');
   for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName('a')[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = '';
-    } else {
-      li[i].style.display = 'none';
-    }
-  }
+	    a = li[i].getElementsByTagName('a')[0];
+	    txtValue = a.textContent || a.innerText;
+	    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+	      li[i].style.display = 'block';
+	    } else {
+	      li[i].style.display = 'none';
+	    }
+	}
 }
