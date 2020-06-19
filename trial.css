@@ -27,6 +27,7 @@ h2{
 	color:white;
 	padding:10px;
 	border-radius:10px;
+	cursor:default;
 }
 nav{
 	width:;
@@ -36,7 +37,7 @@ nav{
 #nav{
 	background-color:;
 	padding:;
-	width:237px;
+	width:240px;
 }
 
 #ml:hover,#l1:hover,#l2:hover{
@@ -87,6 +88,8 @@ a{
   font-size: 18px;
   color: black;
   display:none;
+  cursor:pointer;
+
 }
 em{
 	color:white;
