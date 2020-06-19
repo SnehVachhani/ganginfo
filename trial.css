@@ -9,8 +9,9 @@ small{
 	font-size:20px;
 }
 body{
+	background-image:url('A.jpg');
 	background-color:#0B0C11;
-	color:#C5C6C7;
+	color:white;
 }
 h2{
 	font-size:22px;
@@ -49,7 +50,6 @@ span{
 	opacity:0;
 }
 #myInput {
-
   background-image: url('sicon.jpg');
   background-size: contain;
   background-color:#309BE3;
@@ -62,7 +62,6 @@ span{
   margin: 12px 0px;
   float: left;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -76,16 +75,19 @@ a{
 #myUL {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
-#myUL li {
+.list{
   border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
+  margin-top: -1px;
   background-color: #66FCF1;
-  padding: 12px;
+  padding: 10px;
+  padding-left: 20px;
   text-decoration: none;
   font-size: 18px;
   color: black;
-  display: block;
+  display:none;
+}
+em{
+	color:white;
 }
