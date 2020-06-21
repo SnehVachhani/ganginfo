@@ -1,6 +1,6 @@
 body{
 	background-image:url("A.jpg");
-	background-size:cover;
+	background-size:contain;
 	background-color:#0B0C11;
 	color:white;
 }
